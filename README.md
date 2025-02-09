@@ -41,6 +41,7 @@ ts-node scripts/deploy.ts
 If successful, the smart contract is deployed.
 
 ## Monitoring the Smart Contract
+To interact with the smart contract, ensure that the monitoring process is running.
 
 ### 1️⃣ Monitor Rounds
 ```sh
@@ -125,4 +126,15 @@ For any inquiries, reach out via [GitHub Issues](https://github.com/your-repo/cr
 ---
 
 Enjoy the game! 
+
+
+
+
+
+
+
+
+
+
+
 
