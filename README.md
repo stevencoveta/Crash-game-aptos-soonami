@@ -18,7 +18,7 @@ Create a `.env` file in the root directory with the following environment variab
 ```sh
 APTOS_PRIVATE_KEY=deployer_address
 APTOS_PRIVATE_KEY_2=testing_account
-CONTRACT_ADDRESS=smart_contract
+CONTRACT_ADDRESS=smart_contract_address
 NODE_URL=https://fullnode.testnet.aptoslabs.com/v1
 FAUCET_URL=https://faucet.testnet.aptoslabs.com
 WALLET_ADDRESS=smart_contract_address
@@ -32,11 +32,41 @@ In `Move.toml`, update the `[addresses]` section with the deployed contract addr
 ### 1️⃣ Compile the Contract
 ```sh
 aptos move compile --save-metadata --skip-fetch-latest-git-deps
+Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING crash_game
+{
+  "Result": [
+    "c31632383a843d657cd0da87a73408df77771e208b4ab2cb007a0ae4987f98a8::crash"
+  ]
+}
 ```
 
 ### 2️⃣ Deploy the Contract
 ```sh
 ts-node scripts/deploy.ts
+Compiling contract...
+Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING crash_game
+{
+  "Result": [
+    "c31632383a843d657cd0da87a73408df77771e208b4ab2cb007a0ae4987f98a8::crash"
+  ]
+}
+Account address: 0xc31632383a843d657cd0da87a73408df77771e208b4ab2cb007a0ae4987f98a8
+Account balance: 93617300
+Deploying contract...
+Waiting for deployment confirmation...
+Contract deployed! Hash: 0x6bd27e510570cec62bed3e58c9cce084fa68a2283f824bdf3e862a10f7b638d8
+Waiting for module to be available...
+Initializing contract...
+Contract initialized successfully!
+New contract address: 0xc31632383a843d657cd0da87a73408df77771e208b4ab2cb007a0ae4987f98a8
 ```
 If successful, the smart contract is deployed.
 
