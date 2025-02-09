@@ -1,0 +1,12 @@
+[package]
+name = "crash_game"
+version = "1.0.0"
+upgrade_policy = "compatible"
+
+[addresses]
+crash_game = "0xf065c95b117243e8d8cc91562bb1db8184914e00f0cd35781cb31f43d302a8f2"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "main" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "main" }
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib/", rev = "main" }
