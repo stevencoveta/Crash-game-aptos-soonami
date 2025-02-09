@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const NODE_URL = process.env.NODE_URL;
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const NODE_URL = 'https://fullnode.testnet.aptoslabs.com/v1';
+const CONTRACT_ADDRESS = '0xf065c95b117243e8d8cc91562bb1db8184914e00f0cd35781cb31f43d302a8f2';
 
 async function wait(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
