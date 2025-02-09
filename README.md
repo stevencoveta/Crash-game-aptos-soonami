@@ -1,6 +1,6 @@
 # Crashtos.xyz
 
-🚀 **Live Demo:** Visit https://play.crashtos.xyz/ to play! Connect your **Petra Wallet** and ensure you have some **testnet funds** to try betting.
+**Live Demo:** Visit https://play.crashtos.xyz/ to play! Connect your **Petra Wallet** and ensure you have some **testnet funds** to try betting.
 
 Crashtos.xyz is a **crash game** built on the **Aptos blockchain**.
 
@@ -27,7 +27,7 @@ WALLET_ADDRESS=smart_contract_address
 ### 3️⃣ Configure `Move.toml`
 In `Move.toml`, update the `[addresses]` section with the deployed contract address.
 
-## 🚀 Deploying the Smart Contract
+## Deploying the Smart Contract
 
 ### 1️⃣ Compile the Contract
 ```sh
@@ -40,7 +40,7 @@ ts-node scripts/deploy.ts
 ```
 If successful, the smart contract is deployed.
 
-## 📊 Monitoring the Smart Contract
+## Monitoring the Smart Contract
 
 ### 1️⃣ Monitor Rounds
 ```sh
